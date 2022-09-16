@@ -1,0 +1,193 @@
+body {
+    margin: 0px;
+}
+
+#topcontainer {
+    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: grey;
+    border: 2px solid black;
+    height: 40vh;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: stretch;
+    align-items: center;
+    justify-content: stretch;
+    grid-template-areas: 
+        "screen screen screen screen screen screen"
+        "screen screen screen screen screen screen"
+        "one two three zero plus minus"
+        "four five six delete mul div"
+        "seven eight nine clear comma eq";
+}
+
+.calculator div {
+    font-size: 32px;
+    color: aliceblue;
+}
+
+#calcScreen {
+    grid-area: screen;
+    background-color: white;
+    height: 100%;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+#calcText {
+    color: black;
+    font-size: 86px;
+}
+
+#one {
+    grid-area: one;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#two {
+    grid-area: two;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#three {
+    grid-area: three;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#zero {
+    grid-area: zero;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#plus {
+    grid-area: plus;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#minus {
+    grid-area: minus;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#four {
+    grid-area: four;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#five {
+    grid-area: five;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#six {
+    grid-area: six;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#delete {
+    grid-area: delete;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mul {
+    grid-area: mul;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div {
+    grid-area: div;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seven {
+    grid-area: seven;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#eight {
+    grid-area: eight;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nine {
+    grid-area: nine;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clear {
+    grid-area: clear;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#comma {
+    grid-area: comma;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#eq {
+    grid-area: eq;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
