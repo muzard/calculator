@@ -77,7 +77,7 @@ const clear = document.getElementById("clear")
 clear.addEventListener("click", () => clearNums())
 
 const comma = document.getElementById("comma")
-comma.addEventListener("click", () => addNum("."))
+comma.addEventListener("click", () => makeFloat())
 
 const eq = document.getElementById("eq")
 eq.addEventListener("click", () => equals()) 
@@ -89,13 +89,12 @@ let hiddenNum = null;
 let currentNum = 0;
 let operator;
 
-
-// fix this
 function listToNum() {
-    if ("." in listOfNums) {
-        return parseFloat(listOfNums.join(""))
-    }
     return parseInt(listOfNums.join(""), 10)
+}
+
+function makeFloat() {
+    return 0
 }
 
 function addNum(num) {
