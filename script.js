@@ -62,7 +62,7 @@ const mul = document.getElementById("mul")
 mul.addEventListener("click", () => multiplyNums())
 
 const div = document.getElementById("div")
-div.addEventListener("click", () => alert("div"))
+div.addEventListener("click", () => divideNums())
 
 const seven = document.getElementById("seven")
 seven.addEventListener("click", () => addNum(7))
@@ -77,7 +77,7 @@ const clear = document.getElementById("clear")
 clear.addEventListener("click", () => clearNums())
 
 const comma = document.getElementById("comma")
-comma.addEventListener("click", () => makeFloat())
+comma.addEventListener("click", () => addNum("."))
 
 const eq = document.getElementById("eq")
 eq.addEventListener("click", () => equals()) 
@@ -90,11 +90,7 @@ let currentNum = 0;
 let operator;
 
 function listToNum() {
-    return parseInt(listOfNums.join(""), 10)
-}
-
-function makeFloat() {
-    return 0
+    return parseFloat(listOfNums.join(""), 10)
 }
 
 function addNum(num) {
@@ -139,8 +135,21 @@ function multiplyNums() {
     operator = "*"
 }
 
+function divideNums() {
+    if (hiddenNum !== null) {
+        equals()
+    }
+
+    listOfNums = []
+    hiddenNum = currentNum
+    currentScreen.textContent = 0;
+    currentNum = 0;
+    operator = "/"
+}
+
 function equals() {
     currentNum = operate(hiddenNum, operator, currentNum)
     hiddenNum = null
     currentScreen.textContent = currentNum
+    operator = null
 }
