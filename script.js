@@ -118,7 +118,7 @@ function sumNums() {
 
     listOfNums = []
     hiddenNum = currentNum
-    currentScreen.textContent = 0;
+    currentScreen.textContent = currentNum;
     currentNum = 0;
     operator = "+"
 }
@@ -130,7 +130,7 @@ function multiplyNums() {
 
     listOfNums = []
     hiddenNum = currentNum
-    currentScreen.textContent = 0;
+    currentScreen.textContent = currentNum;
     currentNum = 0;
     operator = "*"
 }
@@ -142,7 +142,7 @@ function divideNums() {
 
     listOfNums = []
     hiddenNum = currentNum
-    currentScreen.textContent = 0;
+    currentScreen.textContent = currentNum;
     currentNum = 0;
     operator = "/"
 }
@@ -154,7 +154,7 @@ function minusNums() {
 
     listOfNums = []
     hiddenNum = currentNum
-    currentScreen.textContent = 0;
+    currentScreen.textContent = currentNum;
     currentNum = 0;
     operator = "-"
 }
