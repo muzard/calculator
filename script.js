@@ -43,7 +43,7 @@ const plus = document.getElementById("plus")
 plus.addEventListener("click", () => sumNums())
 
 const minus = document.getElementById("minus")
-minus.addEventListener("click", () => alert("minus"))
+minus.addEventListener("click", () => minusNums())
 
 
 const four = document.getElementById("four")
