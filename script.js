@@ -87,7 +87,7 @@ let listOfNums = [];
 const currentScreen = document.getElementById("calcText")
 let hiddenNum = null;
 let currentNum = 0;
-let operator;
+let operator = null;
 
 function listToNum() {
     return parseFloat(listOfNums.join(""), 10)
@@ -147,9 +147,38 @@ function divideNums() {
     operator = "/"
 }
 
+function minusNums() {
+    if (hiddenNum !== null) {
+        equals()
+    }
+
+    listOfNums = []
+    hiddenNum = currentNum
+    currentScreen.textContent = 0;
+    currentNum = 0;
+    operator = "-"
+}
+
 function equals() {
+    if (hiddenNum === null && operator === null) {
+        currentScreen.textContent = currentNum
+        return 0
+    }
     currentNum = operate(hiddenNum, operator, currentNum)
     hiddenNum = null
+
+    let strLength = currentNum.toString().length
+    if (strLength > 12) {
+        if (currentNum.toString().includes(".")) {
+            if (strLength > 12) {
+                strLength = 12
+            }
+            currentNum = currentNum.toFixed(12 - strLength)            
+        } else {
+            currentNum = currentNum.toExponential(6)
+        }
+    }
+
     currentScreen.textContent = currentNum
     operator = null
 }
