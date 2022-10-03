@@ -94,9 +94,11 @@ function listToNum() {
 }
 
 function addNum(num) {
-    listOfNums.push(num)
-    currentNum = listToNum()
-    currentScreen.textContent = currentNum
+    if (!(num == "." && listOfNums.indexOf('.') != -1)) {
+        listOfNums.push(num)
+        currentNum = listToNum()
+        currentScreen.textContent = currentNum
+    }
 }
 
 function deleteNum() {
