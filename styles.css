@@ -13,7 +13,7 @@ body {
 
 .calculator {
     background-color: grey;
-    border: 2px solid black;
+    border: 4px solid black;
     height: 40vh;
     width: 50vw;
     display: grid;
@@ -33,6 +33,13 @@ body {
 .calculator div {
     font-size: 32px;
     color: aliceblue;
+}
+
+.calculator button {
+    font-size: 32px;
+    font-weight: 600;
+    background-color: aliceblue;
+    border: 1px solid darkblue;
 }
 
 #calcScreen {
