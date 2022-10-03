@@ -1,9 +1,10 @@
 body {
     margin: 0px;
+    background-image: url('./imgs/layered-peaks-haikei.svg');
+    background-position: 0% 8%;
 }
 
 #topcontainer {
-    background-color: aqua;
     width: 100vw;
     height: 100vh;
     display: flex;
