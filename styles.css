@@ -93,6 +93,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: aliceblue;
+    background-color: grey;
 }
 
 #minus {
@@ -101,6 +103,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: aliceblue;
+    background-color: grey;
 }
 
 #four {
@@ -133,6 +137,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: aliceblue;
+    background-color: rgb(217, 112, 6);
 }
 
 #mul {
@@ -141,6 +147,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: aliceblue;
+    background-color: grey;
 }
 
 #div {
@@ -149,6 +157,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: aliceblue;
+    background-color: grey;
 }
 
 #seven {
@@ -181,6 +191,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: aliceblue;
+    background-color: rgb(217, 112, 6);
 }
 
 #comma {
@@ -189,6 +201,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: aliceblue;
+    background-color: rgb(217, 112, 6);
 }
 
 #eq {
@@ -197,4 +211,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: aliceblue;
+    background-color: black;
 }
