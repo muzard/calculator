@@ -166,6 +166,10 @@ function equals() {
         currentScreen.textContent = currentNum
         return 0
     }
+
+    if (currentNum == 0 && operator == "/") {
+        alert("https://youtu.be/Q5HGDWlcCRs?t=15")
+    }
     currentNum = operate(hiddenNum, operator, currentNum)
     hiddenNum = null
 
