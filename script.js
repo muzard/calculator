@@ -188,3 +188,5 @@ function equals() {
     currentScreen.textContent = currentNum
     operator = null
 }
+
+const actionKeys = document.querySelectorAll(".action")
