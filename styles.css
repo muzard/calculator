@@ -220,3 +220,11 @@ button {
 .pressed {
     background-color: rgb(84, 84, 84);
 }
+
+.numPressed {
+    background-color: rgb(191, 201, 210);
+}
+
+.editPressed {
+    background-color: rgb(164, 86, 7)
+}

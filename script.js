@@ -163,6 +163,7 @@ function minusNums() {
 }
 
 function equals() {
+    actionKeys.forEach(key => key.classList.remove('pressed'))
     if (hiddenNum === null && operator === null) {
         currentScreen.textContent = currentNum
         return 0
@@ -191,10 +192,19 @@ function equals() {
 }
 
 const actionKeys = document.querySelectorAll(".action")
-
-console.table(actionKeys)
-
 actionKeys.forEach(key => key.addEventListener('click', (e) => {
     actionKeys.forEach(key => key.classList.remove('pressed'))
     key.classList.add('pressed')
 }));
+
+const numKeys = document.querySelectorAll(".num")
+numKeys.forEach(key => key.addEventListener('click', () => {
+    key.classList.add('numPressed')
+    setTimeout(() => key.classList.remove('numPressed'), 90)
+}))
+
+const editKeys = document.querySelectorAll('.edit')
+editKeys.forEach(key => key.addEventListener('click', () => {
+    key.classList.add('editPressed')
+    setTimeout(() => key.classList.remove('editPressed'), 90)
+}))
