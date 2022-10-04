@@ -31,12 +31,12 @@ body {
         "seven eight nine clear comma eq";
 }
 
-.calculator div {
+div {
     font-size: 32px;
     color: aliceblue;
 }
 
-.calculator button {
+button {
     font-size: 32px;
     font-weight: 600;
     background-color: aliceblue;
@@ -56,7 +56,7 @@ body {
     font-size: 86px;
 }
 
-#one {
+.one {
     grid-area: one;
     height: 100%;
     display: flex;
@@ -64,7 +64,7 @@ body {
     align-items: center;
 }
 
-#two {
+.two {
     grid-area: two;
     height: 100%;
     display: flex;
@@ -72,7 +72,7 @@ body {
     align-items: center;
 }
 
-#three {
+.three {
     grid-area: three;
     height: 100%;
     display: flex;
@@ -80,7 +80,7 @@ body {
     align-items: center;
 }
 
-#zero {
+.zero {
     grid-area: zero;
     height: 100%;
     display: flex;
@@ -88,7 +88,7 @@ body {
     align-items: center;
 }
 
-#plus {
+.plus {
     grid-area: plus;
     height: 100%;
     display: flex;
@@ -98,7 +98,7 @@ body {
     background-color: grey;
 }
 
-#minus {
+.minus {
     grid-area: minus;
     height: 100%;
     display: flex;
@@ -108,7 +108,7 @@ body {
     background-color: grey;
 }
 
-#four {
+.four {
     grid-area: four;
     height: 100%;
     display: flex;
@@ -116,7 +116,7 @@ body {
     align-items: center;
 }
 
-#five {
+.five {
     grid-area: five;
     height: 100%;
     display: flex;
@@ -124,7 +124,7 @@ body {
     align-items: center;
 }
 
-#six {
+.six {
     grid-area: six;
     height: 100%;
     display: flex;
@@ -132,7 +132,7 @@ body {
     align-items: center;
 }
 
-#delete {
+.delete {
     grid-area: delete;
     height: 100%;
     display: flex;
@@ -142,7 +142,7 @@ body {
     background-color: rgb(217, 112, 6);
 }
 
-#mul {
+.mul {
     grid-area: mul;
     height: 100%;
     display: flex;
@@ -152,7 +152,7 @@ body {
     background-color: grey;
 }
 
-#div {
+.div {
     grid-area: div;
     height: 100%;
     display: flex;
@@ -162,7 +162,7 @@ body {
     background-color: grey;
 }
 
-#seven {
+.seven {
     grid-area: seven;
     height: 100%;
     display: flex;
@@ -170,7 +170,7 @@ body {
     align-items: center;
 }
 
-#eight {
+.eight {
     grid-area: eight;
     height: 100%;
     display: flex;
@@ -178,7 +178,7 @@ body {
     align-items: center;
 }
 
-#nine {
+.nine {
     grid-area: nine;
     height: 100%;
     display: flex;
@@ -186,7 +186,7 @@ body {
     align-items: center;
 }
 
-#clear {
+.clear {
     grid-area: clear;
     height: 100%;
     display: flex;
@@ -196,7 +196,7 @@ body {
     background-color: rgb(217, 112, 6);
 }
 
-#comma {
+.comma {
     grid-area: comma;
     height: 100%;
     display: flex;
@@ -206,7 +206,7 @@ body {
     background-color: rgb(217, 112, 6);
 }
 
-#eq {
+.eq {
     grid-area: eq;
     height: 100%;
     display: flex;
