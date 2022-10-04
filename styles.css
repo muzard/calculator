@@ -41,6 +41,7 @@ button {
     font-weight: 600;
     background-color: aliceblue;
     border: 1px solid darkblue;
+    transform: all 0.09s;
 }
 
 #calcScreen {
@@ -214,4 +215,8 @@ button {
     align-items: center;
     color: aliceblue;
     background-color: black;
+}
+
+.pressed {
+    background-color: rgb(84, 84, 84);
 }

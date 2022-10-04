@@ -27,59 +27,59 @@ function operate(a, operator, b) {
     }
 }
 
-const one = document.getElementById("one")
+const one = document.querySelector(".one")
 one.addEventListener("click", () => addNum(1))
 
-const two = document.getElementById("two")
+const two = document.querySelector(".two")
 two.addEventListener("click", () => addNum(2))
 
-const three = document.getElementById("three")
+const three = document.querySelector(".three")
 three.addEventListener("click", () => addNum(3))
 
-const zero = document.getElementById("zero")
+const zero = document.querySelector(".zero")
 zero.addEventListener("click", () => addNum(0))
 
-const plus = document.getElementById("plus")
+const plus = document.querySelector(".plus")
 plus.addEventListener("click", () => sumNums())
 
-const minus = document.getElementById("minus")
+const minus = document.querySelector(".minus")
 minus.addEventListener("click", () => minusNums())
 
 
-const four = document.getElementById("four")
+const four = document.querySelector(".four")
 four.addEventListener("click", () => addNum(4))
 
-const five = document.getElementById("five")
+const five = document.querySelector(".five")
 five.addEventListener("click", () => addNum(5))
 
-const six = document.getElementById("six")
+const six = document.querySelector(".six")
 six.addEventListener("click", () => addNum(6))
 
-const delet = document.getElementById("delete")
+const delet = document.querySelector(".delete")
 delet.addEventListener("click", () => deleteNum())
 
-const mul = document.getElementById("mul")
+const mul = document.querySelector(".mul")
 mul.addEventListener("click", () => multiplyNums())
 
-const div = document.getElementById("div")
+const div = document.querySelector(".div")
 div.addEventListener("click", () => divideNums())
 
-const seven = document.getElementById("seven")
+const seven = document.querySelector(".seven")
 seven.addEventListener("click", () => addNum(7))
 
-const eight = document.getElementById("eight")
+const eight = document.querySelector(".eight")
 eight.addEventListener("click", () => addNum(8))
 
-const nine = document.getElementById("nine")
+const nine = document.querySelector(".nine")
 nine.addEventListener("click", () => addNum(9))
 
-const clear = document.getElementById("clear")
+const clear = document.querySelector(".clear")
 clear.addEventListener("click", () => clearNums())
 
-const comma = document.getElementById("comma")
+const comma = document.querySelector(".comma")
 comma.addEventListener("click", () => addNum("."))
 
-const eq = document.getElementById("eq")
+const eq = document.querySelector(".eq")
 eq.addEventListener("click", () => equals()) 
 
 let listOfNums = [];
@@ -111,6 +111,7 @@ function clearNums() {
     hiddenNum = null
     listOfNums = []
     currentScreen.textContent = 0
+    actionKeys.forEach(key => key.classList.remove('pressed'))
 }
 
 function sumNums() {
@@ -190,3 +191,10 @@ function equals() {
 }
 
 const actionKeys = document.querySelectorAll(".action")
+
+console.table(actionKeys)
+
+actionKeys.forEach(key => key.addEventListener('click', (e) => {
+    actionKeys.forEach(key => key.classList.remove('pressed'))
+    key.classList.add('pressed')
+}));
